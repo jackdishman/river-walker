@@ -42,7 +42,8 @@ export default function Home() {
           Thanksgiving, River&apos;s world turned upside down when he was
           diagnosed with medulloblastoma. His parents, Meghan Fisher Walker and
           Frazer Walker, faced this devastating news with incredible strength
-          and determination.
+          and determination. Meghan, a 2013 Swampscott High School graduate, was
+          on her way to her 10-year class reunion when River fell ill.
         </p>
 
         <h3 className="text-2xl text-teal-500 mt-4">
@@ -91,7 +92,8 @@ export default function Home() {
             <strong>May 2024:</strong> On May 16, River&apos;s twin brothers,
             Atlas and Sullivan, were born. Despite the challenges, River adapted
             well to being a big brother, showing curiosity and kindness towards
-            the twins.
+            the twins. Atlas had to undergo intestinal surgery at 1 month old,
+            and the family also overcame COVID and most recently norovirus.
           </li>
           <li>
             <strong>September 2024:</strong> River is expected to complete his
@@ -99,6 +101,13 @@ export default function Home() {
             old. The road ahead remains challenging, but River&apos;s courage
             and the support of his family and community provide hope for the
             future.
+          </li>
+          {/* italics */}
+          <li>
+            <em>
+              September 22, 2024, will be River's 3rd birthday, and he may be
+              able to join the event just before starting radiation.
+            </em>
           </li>
         </ul>
 
@@ -114,10 +123,11 @@ export default function Home() {
           dedication to their son&apos;s fight against cancer.
         </p>
         <p className="text-md text-teal-700 mt-2">
-          Their story is one of love, hope, and unwavering determination. The
-          support from friends, family, and the community has been invaluable,
-          helping them navigate this difficult journey and providing the
-          strength to face each new challenge.
+          Being away from family, especially Frazer's family in England, has
+          been particularly tough. Their story is one of love, hope, and
+          unwavering determination. The support from friends, family, and the
+          community has been invaluable, helping them navigate this difficult
+          journey and providing the strength to face each new challenge.
         </p>
       </div>
       <GoFundMe />
