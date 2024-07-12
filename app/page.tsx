@@ -105,8 +105,8 @@ export default function Home() {
           {/* italics */}
           <li>
             <em>
-              September 22, 2024, will be River's 3rd birthday, and he may be
-              able to join the event just before starting radiation.
+              September 22, 2024, will be River&apos;s 3rd birthday, and he may
+              be able to join the event just before starting radiation.
             </em>
           </li>
         </ul>
@@ -123,8 +123,8 @@ export default function Home() {
           dedication to their son&apos;s fight against cancer.
         </p>
         <p className="text-md text-teal-700 mt-2">
-          Being away from family, especially Frazer's family in England, has
-          been particularly tough. Their story is one of love, hope, and
+          Being away from family, especially Frazer&apos;s family in England,
+          has been particularly tough. Their story is one of love, hope, and
           unwavering determination. The support from friends, family, and the
           community has been invaluable, helping them navigate this difficult
           journey and providing the strength to face each new challenge.
