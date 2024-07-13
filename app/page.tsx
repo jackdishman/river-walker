@@ -1,6 +1,6 @@
 import GoFundMe from "./components/GoFundMe";
 import Image from "next/image";
-import ImageCarousel from "./components/ImageCarouse";
+import ImageCarousel from "./components/ImageCarousel";
 
 export default function Home() {
   return (
@@ -166,6 +166,10 @@ export default function Home() {
               "/image13.png",
               "/image14.png",
               "/image15.png",
+              "/image21.png",
+              "/image22.png",
+              "/image23.png",
+              "/image24.png",
             ]}
           />
         </div>
