@@ -1,20 +1,34 @@
 import GoFundMe from "./components/GoFundMe";
+import Image from "next/image";
+import ImageCarousel from "./components/ImageCarouse";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-8 bg-teal-50">
       <div className="text-center mb-12">
-        <h1 className="text-5xl font-bold text-teal-600">River Run 5k</h1>
-        <h2 className="text-xl text-teal-500 mt-4">
-          When? September 21st or 22nd
-        </h2>
-        <h3 className="text-lg text-teal-400 mt-2">
-          Where? North Shore, MA. Register for event details
-        </h3>
+        <div className="flex flex-col sm:flex-row items-center">
+          <Image
+            src="/pfp.png"
+            alt="River Walker"
+            width={200}
+            height={200}
+            className="rounded-full"
+          />
+          <div className="mt-5 sm:ml-4">
+            <h1 className="text-5xl font-bold text-teal-600">River Run 5k</h1>
+            <h2 className="text-xl text-teal-500 mt-4">
+              When? September 21st or 22nd
+            </h2>
+            <h3 className="text-lg text-teal-400 mt-2">
+              Where? North Shore, MA. Register for event details
+            </h3>
+          </div>
+        </div>
         <p className="text-md text-teal-600 mt-4 max-w-3xl mx-auto">
-          Join us for a 5k run to support River Walker, a brave 2-year-old
-          battling medulloblastoma. All proceeds will go towards his medical
-          expenses and support for his family during this challenging time.
+          On his third birthday, join us in running or walking a 5k run to
+          support River Walker, battling medulloblastoma. All proceeds will go
+          towards his medical expenses and support for his family during this
+          challenging time.
         </p>
       </div>
 
@@ -45,6 +59,23 @@ export default function Home() {
           and determination. Meghan, a 2013 Swampscott High School graduate, was
           on her way to her 10-year class reunion when River fell ill.
         </p>
+
+        <div className="-mx-6 pb-5">
+          <ImageCarousel
+            imageUrls={[
+              "/image1.png",
+              "/image2.png",
+              "/image3.png",
+              "/image4.png",
+              "/image5.png",
+              "/image16.png",
+              "/image17.png",
+              "/image18.png",
+              "/image19.png",
+              "/image20.png",
+            ]}
+          />
+        </div>
 
         <h3 className="text-2xl text-teal-500 mt-4">
           Timeline of River&apos;s Journey
@@ -122,6 +153,23 @@ export default function Home() {
           hardships, Meghan and Frazer have shown remarkable resilience and
           dedication to their son&apos;s fight against cancer.
         </p>
+        <div className="-mx-6 pb-5">
+          <ImageCarousel
+            imageUrls={[
+              "/image6.png",
+              "/image7.png",
+              "/image8.png",
+              "/image9.png",
+              "/image10.png",
+              "/image11.png",
+              "/image12.png",
+              "/image13.png",
+              "/image14.png",
+              "/image15.png",
+            ]}
+          />
+        </div>
+
         <p className="text-md text-teal-700 mt-2">
           Being away from family, especially Frazer&apos;s family in England,
           has been particularly tough. Their story is one of love, hope, and
