@@ -4,7 +4,7 @@ import React from "react";
 
 export default function GoFundMe() {
   return (
-    <div className="w-96 h-[31rem]">
+    <div className="w-96 h-[31rem] sm:mr-8">
       <iframe
         src="https://www.gofundme.com/f/hope-for-river-a-journey-against-medulloblastoma/widget/large?sharesheet=CAMPAIGN_PAGE&attribution_id=undefined"
         width="100%"

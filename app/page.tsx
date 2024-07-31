@@ -1,6 +1,7 @@
 import GoFundMe from "./components/GoFundMe";
 import Image from "next/image";
 import ImageCarousel from "./components/ImageCarousel";
+import HighlightMintCard from "./components/HighlightMintCard";
 
 export default function Home() {
   return (
@@ -182,7 +183,12 @@ export default function Home() {
           journey and providing the strength to face each new challenge.
         </p>
       </div>
-      <GoFundMe />
+      <div className="flex justify-center">
+        <div className="flex flex-col sm:flex-row">
+          <GoFundMe />
+          <HighlightMintCard />
+        </div>
+      </div>
     </main>
   );
 }
