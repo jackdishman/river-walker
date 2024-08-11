@@ -16,12 +16,14 @@ export default function Home() {
             className="rounded-full"
           />
           <div className="mt-5 sm:ml-4">
-            <h1 className="text-5xl font-bold text-teal-600">River Run 5k</h1>
+            <h1 className="text-5xl font-bold text-teal-600">
+              River Walk / Run 5k
+            </h1>
             <h2 className="text-xl text-teal-500 mt-4">
-              When? September 21st or 22nd
+              When? Sunday, September 15th at 10:00 AM
             </h2>
             <h3 className="text-lg text-teal-400 mt-2">
-              Where? North Shore, MA. Register for event details
+              Where? 48 Bay View Drive, Swampscott, MA
             </h3>
           </div>
         </div>
@@ -30,6 +32,11 @@ export default function Home() {
           support River Walker, battling medulloblastoma. All proceeds will go
           towards his medical expenses and support for his family during this
           challenging time.
+        </p>
+        <p className="text-md text-teal-600 mt-4 max-w-3xl mx-auto">
+          All participants and donors are invited to a brunch following the
+          event, where there will be a silent auction and raffle items, as well
+          as refreshments.
         </p>
       </div>
 
@@ -183,10 +190,64 @@ export default function Home() {
           journey and providing the strength to face each new challenge.
         </p>
       </div>
-      <div className="flex justify-center">
-        <div className="flex flex-col sm:flex-row">
-          <GoFundMe />
-          <HighlightMintCard />
+      {/* Sponsors */}
+      <div className="bg-white shadow-md rounded-lg p-6 mb-12 w-full max-w-4xl">
+        <h2 className="text-3xl font-semibold text-teal-600 mb-4">Sponsors</h2>
+        <p className="text-md text-teal-700 mt-2">
+          Please contact us if you would like to sponsor the event or donate:{" "}
+          <a href="mailto:me@jackdishman.com" className="underline">
+            me@jackdishman.com
+          </a>{" "}
+          or
+          <a href="mailto:kzdish@gmail.com" className="underline">
+            kzdish@gmail.com
+          </a>
+          .
+        </p>
+        <p className="text-md text-teal-700 mt-2">
+          Company logos will be displayed on this website, on the back of the
+          event t-shirts, and physically at the event.
+        </p>
+      </div>
+      {/* Race route */}
+      <div className="bg-white shadow-md rounded-lg p-6 mb-12 w-full max-w-4xl">
+        <h2 className="text-3xl font-semibold text-teal-600 mb-4">
+          Race Route
+        </h2>
+        <p className="text-md text-teal-700 mt-2">
+          The walk / run will start at 48 Bay View Drive, head towards Bay View
+          Ave, through Rockland Ave, down Redington st, through Humphrey St to
+          Puritan Road, back through Humphrey St, and up Millet Rd to finish at
+          48 Bay View Drive.
+        </p>
+        <ImageCarousel imageUrls={["/race-route.jpeg"]} showShadow={false} />
+      </div>
+      {/* to register */}
+      <div className="bg-white shadow-md rounded-lg p-6 mb-12 w-full max-w-4xl">
+        <h2 className="text-3xl font-semibold text-teal-600 mb-4">
+          Registration
+        </h2>
+        <p className="text-md text-teal-700 mt-2">
+          To register, please fill out this form and submit your donation of at
+          least $25. Donations can be made through the GoFundMe below the form,
+          cash or check at the time of race, or Venmo to @Kristen-Dishman. USDC
+          / ETH donations to riverw.cb.id are also accepted! All proceeds will
+          go towards River's medical expenses and support for his family during
+          this challenging time.
+        </p>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSe88TZtjzZYcnioCvacCAdJKrPA27SkrMvdTmv83ZPmHabz4A/viewform?embedded=true"
+          width="100%"
+          height="600px"
+        >
+          Loading…
+        </iframe>
+
+        <div className="flex justify-center">
+          <div className="flex flex-col sm:flex-row">
+            <GoFundMe />
+            <HighlightMintCard />
+          </div>
         </div>
       </div>
     </main>

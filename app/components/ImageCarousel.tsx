@@ -3,7 +3,13 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-export default function ImageCarousel({ imageUrls }: { imageUrls: string[] }) {
+export default function ImageCarousel({
+  imageUrls,
+  showShadow = true,
+}: {
+  imageUrls: string[];
+  showShadow?: boolean;
+}) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isGridView, setIsGridView] = useState(false);
   const [isImageOverlayOpen, setIsImageOverlayOpen] = useState(false);
@@ -52,7 +58,11 @@ export default function ImageCarousel({ imageUrls }: { imageUrls: string[] }) {
       )}
       {!isGridView ? (
         <>
-          <div className="overflow-hidden relative rounded-lg shadow-md">
+          <div
+            className={`overflow-hidden relative rounded-lg ${
+              showShadow ? "shadow-md" : ""
+            }`}
+          >
             <div
               className="flex transition-transform duration-500 w-full h-64 lg:h-[30rem]"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -71,44 +81,48 @@ export default function ImageCarousel({ imageUrls }: { imageUrls: string[] }) {
               ))}
             </div>
           </div>
-          <button
-            onClick={handlePrev}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 text-teal-500 hover:text-white p-2 rounded-full border border-teal-500 shadow-md hover:bg-teal-700 focus:outline-none"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-              />
-            </svg>
-          </button>
-          <button
-            onClick={handleNext}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 text-teal-500 hover:text-white border border-teal-500 p-2 rounded-full shadow-md hover:bg-teal-700 focus:outline-none"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </button>
+          {imageUrls.length > 1 && (
+            <>
+              <button
+                onClick={handlePrev}
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 text-teal-500 hover:text-white p-2 rounded-full border border-teal-500 shadow-md hover:bg-teal-700 focus:outline-none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                  />
+                </svg>
+              </button>
+              <button
+                onClick={handleNext}
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 text-teal-500 hover:text-white border border-teal-500 p-2 rounded-full shadow-md hover:bg-teal-700 focus:outline-none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+            </>
+          )}
           <button
             onClick={toggleGridView}
             className="absolute right-4 bottom-4 text-teal-500 hover:text-white border border-teal-500 p-2 rounded-full shadow-md hover:bg-teal-700 focus:outline-none"
@@ -129,15 +143,16 @@ export default function ImageCarousel({ imageUrls }: { imageUrls: string[] }) {
             </svg>
           </button>
           <div className="flex justify-center mt-4 space-x-2">
-            {imageUrls.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full ${
-                  index === currentIndex ? "bg-teal-500" : "bg-teal-200"
-                }`}
-              ></button>
-            ))}
+            {imageUrls.length > 1 &&
+              imageUrls.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  className={`w-3 h-3 rounded-full ${
+                    index === currentIndex ? "bg-teal-500" : "bg-teal-200"
+                  }`}
+                ></button>
+              ))}
           </div>
         </>
       ) : (
@@ -154,7 +169,9 @@ export default function ImageCarousel({ imageUrls }: { imageUrls: string[] }) {
                   alt={`Grid Image ${index}`}
                   width={500}
                   height={500}
-                  className="w-full h-full object-cover rounded-lg shadow-md"
+                  className={`w-full h-full object-cover rounded-lg ${
+                    showShadow ? "shadow-md" : ""
+                  }`}
                 />
               </div>
             ))}
