@@ -232,8 +232,8 @@ export default function Home() {
           least $25. Donations can be made through the GoFundMe below the form,
           cash or check at the time of race, or Venmo to @Kristen-Dishman. USDC
           / ETH donations to riverw.cb.id are also accepted! All proceeds will
-          go towards River's medical expenses and support for his family during
-          this challenging time.
+          go towards River&apos;s medical expenses and support for his family
+          during this challenging time.
         </p>
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSe88TZtjzZYcnioCvacCAdJKrPA27SkrMvdTmv83ZPmHabz4A/viewform?embedded=true"
