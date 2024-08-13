@@ -138,7 +138,7 @@ export default function Home() {
             <strong>September 2024:</strong> River is expected to complete his
             chemotherapy and begin radiation treatment as he turns three years
             old. The road ahead remains challenging, but River&apos;s courage
-            and the support of his family and community provide hope for the
+            and the support of his family and community provide strength for the
             future.
           </li>
           {/* italics */}
@@ -184,10 +184,11 @@ export default function Home() {
 
         <p className="text-md text-teal-700 mt-2">
           Being away from family, especially Frazer&apos;s family in England,
-          has been particularly tough. Their story is one of love, hope, and
-          unwavering determination. The support from friends, family, and the
-          community has been invaluable, helping them navigate this difficult
-          journey and providing the strength to face each new challenge.
+          has been particularly tough. Their story is one of love, positivity,
+          and unwavering determination. The support from friends, family, and
+          the community has been invaluable, helping them navigate this
+          difficult journey and providing the strength to face each new
+          challenge.
         </p>
       </div>
       {/* Sponsors */}
