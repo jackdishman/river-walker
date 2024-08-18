@@ -19,11 +19,9 @@ export default function Home() {
             <h1 className="text-5xl font-bold text-teal-600">
               River Walk / Run 5k
             </h1>
-            <h2 className="text-xl text-teal-500 mt-4">
-              When? Sunday, September 15th at 10:00 AM
-            </h2>
+            <h2 className="text-xl text-teal-500 mt-4">When? Date postponed</h2>
             <h3 className="text-lg text-teal-400 mt-2">
-              Where? 48 Bay View Drive, Swampscott, MA
+              Where? Announced when date finalized
             </h3>
           </div>
         </div>
@@ -140,13 +138,6 @@ export default function Home() {
             old. The road ahead remains challenging, but River&apos;s courage
             and the support of his family and community provide strength for the
             future.
-          </li>
-          {/* italics */}
-          <li>
-            <em>
-              September 22, 2024, will be River&apos;s 3rd birthday, and he may
-              be able to join the event just before starting radiation.
-            </em>
           </li>
         </ul>
 
