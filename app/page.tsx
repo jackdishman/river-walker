@@ -238,7 +238,7 @@ export default function Home() {
         <div className="flex justify-center">
           <div className="flex flex-col sm:flex-row">
             <GoFundMe />
-            <HighlightMintCard />
+            {/* <HighlightMintCard /> */}
           </div>
         </div>
       </div>
