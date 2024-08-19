@@ -19,7 +19,9 @@ export default function Home() {
             <h1 className="text-5xl font-bold text-teal-600">
               River Walk / Run 5k
             </h1>
-            <h2 className="text-xl text-teal-500 mt-4">When? Date postponed</h2>
+            <h2 className="text-xl text-teal-500 mt-4">
+              When? Date postponed to Spring 2025
+            </h2>
             <h3 className="text-lg text-teal-400 mt-2">
               Where? Announced when date finalized
             </h3>
@@ -217,9 +219,9 @@ export default function Home() {
       {/* to register */}
       <div className="bg-white shadow-md rounded-lg p-6 mb-12 w-full max-w-4xl">
         <h2 className="text-3xl font-semibold text-teal-600 mb-4">
-          Registration
+          Donation Methods
         </h2>
-        <p className="text-md text-teal-700 mt-2">
+        {/* <p className="text-md text-teal-700 mt-2">
           To register, please fill out this form and submit your donation of at
           least $25. Donations can be made through the GoFundMe below the form,
           cash or check at the time of race, or Venmo to @Kristen-Dishman. USDC
@@ -233,7 +235,7 @@ export default function Home() {
           height="600px"
         >
           Loading…
-        </iframe>
+        </iframe> */}
 
         <div className="flex justify-center">
           <div className="flex flex-col sm:flex-row">
