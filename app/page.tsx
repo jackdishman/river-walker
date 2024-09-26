@@ -6,7 +6,7 @@ import HighlightMintCard from "./components/HighlightMintCard";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-8 bg-teal-50">
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 w-full max-w-4xl">
         <div className="flex flex-col sm:flex-row items-center">
           <Image
             src="/pfp.png"
@@ -16,28 +16,19 @@ export default function Home() {
             className="rounded-full"
           />
           <div className="mt-5 sm:ml-4">
-            <h1 className="text-5xl font-bold text-teal-600">
-              River Walk / Run 5k
+            <h1 className="text-3xl font-bold text-teal-600">
+              Swampscott High School&apos;s 2024 Powderpuff Game to Support a
+              Local Family Battling Childhood Cancer
             </h1>
-            <h2 className="text-xl text-teal-500 mt-4">
-              When? Date postponed to Spring 2025
-            </h2>
-            <h3 className="text-lg text-teal-400 mt-2">
-              Where? Announced when date finalized
-            </h3>
           </div>
         </div>
-        <p className="text-md text-teal-600 mt-4 max-w-3xl mx-auto">
-          On his third birthday, join us in running or walking a 5k run to
-          support River Walker, battling medulloblastoma. All proceeds will go
-          towards his medical expenses and support for his family during this
-          challenging time.
-        </p>
-        <p className="text-md text-teal-600 mt-4 max-w-3xl mx-auto">
-          All participants and donors are invited to a brunch following the
-          event, where there will be a silent auction and raffle items, as well
-          as refreshments.
-        </p>
+        <h2 className="text-lg font-bold text-teal-600 mt-5">
+          On November 23, 2024, Swampscott High School&apos;s girls powderpuff
+          team will face Marblehead in a highly anticipated matchup in
+          Swampscott. A portion of the proceeds will go to the Walker family,
+          whose son, River, is courageously fighting medulloblastoma, a form of
+          brain cancer, at St. Jude Children’s Research Hospital.
+        </h2>
       </div>
 
       <div className="bg-white shadow-md rounded-lg p-6 mb-12 w-full max-w-4xl">
