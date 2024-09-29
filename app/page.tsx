@@ -194,19 +194,7 @@ export default function Home() {
           event t-shirts, and physically at the event.
         </p>
       </div>
-      {/* Race route */}
-      <div className="bg-white shadow-md rounded-lg p-6 mb-12 w-full max-w-4xl">
-        <h2 className="text-3xl font-semibold text-teal-600 mb-4">
-          Race Route
-        </h2>
-        <p className="text-md text-teal-700 mt-2">
-          The walk / run will start at 48 Bay View Drive, head towards Bay View
-          Ave, through Rockland Ave, down Redington st, through Humphrey St to
-          Puritan Road, back through Humphrey St, and up Millet Rd to finish at
-          48 Bay View Drive.
-        </p>
-        <ImageCarousel imageUrls={["/race-route.jpeg"]} showShadow={false} />
-      </div>
+
       {/* to register */}
       <div className="bg-white shadow-md rounded-lg p-6 mb-12 w-full max-w-4xl">
         <h2 className="text-3xl font-semibold text-teal-600 mb-4">
