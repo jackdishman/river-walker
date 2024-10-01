@@ -17,14 +17,14 @@ export default function Home() {
           />
           <div className="mt-5 sm:ml-4">
             <h1 className="text-3xl font-bold text-teal-600">
-              Swampscott High School&apos;s 2024 Powderpuff Game to Support a
+              Swampscott High School&apos;s 2024 Flag Football Game to Support a
               Local Family Battling Childhood Cancer
             </h1>
           </div>
         </div>
         <h2 className="text-lg font-bold text-teal-600 mt-5">
-          On November 23, 2024, Swampscott High School&apos;s girls powderpuff
-          team will face Marblehead in a highly anticipated matchup in
+          On November 23, 2024 at 10am, Swampscott High School&apos;s Flag
+          Football team will face Marblehead in a highly anticipated matchup in
           Swampscott. A portion of the proceeds will go to the Walker family,
           whose son, River, is courageously fighting medulloblastoma, a form of
           brain cancer, at St. Jude Children’s Research Hospital.
