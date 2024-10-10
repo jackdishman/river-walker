@@ -5,8 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "River Run 5k",
-  description: "Join us in running or walking a 5k to support River Walker.",
+  title: "River Walker - Medulloblastoma Awareness",
+  description:
+    "River Walker is an adorable and lively 2-year-old toddler facing a life-threatening battle against Medulloblastoma, a rare and aggressive form of brain and spinal cord cancer affecting fewer than 500 adults and children in the United States each year",
 };
 
 export default function RootLayout({
