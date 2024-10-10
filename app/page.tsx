@@ -179,7 +179,7 @@ export default function Home() {
       <div className="bg-white shadow-md rounded-lg p-6 mb-12 w-full max-w-4xl">
         <h2 className="text-3xl font-semibold text-teal-600 mb-4">Sponsors</h2>
         <p className="text-md text-teal-700 mt-2">
-          Please contact us if you would like to sponsor the event or donate:{" "}
+          Please contact us if you would like to sponsor or donate:{" "}
           <a href="mailto:me@jackdishman.com" className="underline">
             me@jackdishman.com
           </a>{" "}
@@ -188,10 +188,6 @@ export default function Home() {
             kzdish@gmail.com
           </a>
           .
-        </p>
-        <p className="text-md text-teal-700 mt-2">
-          Company logos will be displayed on this website, on the back of the
-          event t-shirts, and physically at the event.
         </p>
       </div>
 
