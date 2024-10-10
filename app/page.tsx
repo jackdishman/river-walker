@@ -50,7 +50,7 @@ export default function Home() {
         </h2>
         <h3 className="text-2xl text-teal-500 mt-2">Meet River Walker</h3>
         <p className="text-md text-teal-700 mt-2">
-          River Walker is a brave and lively 2-year-old who loves Baby Shark
+          River Walker is a brave and lively 3-year-old who loves Baby Shark
           videos and playing with his toys. In November 2023, just before
           Thanksgiving, River&apos;s world turned upside down when he was
           diagnosed with medulloblastoma. His parents, Meghan Fisher Walker and
